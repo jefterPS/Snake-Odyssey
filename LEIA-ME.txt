@@ -1,31 +1,20 @@
-SNAKE ODYSSEY — CENTRAL DE DOWNLOADS
+SNAKE ODYSSEY — SITE V3
 
-O site NÃO precisa ser recriado a cada versão.
+CORREÇÕES
+- Ícone agora incluso em assets/icone.png.
+- GitHub Releases configurado para jefterPS/Snake-Odyssey.
+- Design reformulado, responsivo e com duas tabelas de downloads.
 
-O QUE VOCÊ PRECISA FAZER (UMA VEZ):
-1. Criar ou escolher um repositório PÚBLICO no GitHub para distribuir o jogo.
-2. Abrir config.js e preencher owner (seu usuário ou organização) e repo (nome do repositório).
-3. Publicar a pasta inteira deste site no Netlify Drop: https://app.netlify.com/drop
-   Dica: conecte o repositório do SITE ao Netlify para atualizações futuras de layout automáticas.
+ATUALIZAR O SITE NO GITHUB
+1. Abra https://github.com/jefterPS/Snake-Odyssey
+2. Clique em Add file / Upload files.
+3. Envie index.html, app.js, config.js e a pasta assets com icone.png.
+4. Confirme as alterações, substituindo arquivos antigos.
+5. Aguarde GitHub Pages publicar.
 
-A CADA NOVA VERSÃO DO JOGO:
-1. GitHub > repositório do jogo > Releases > Draft a new release.
-2. Criar uma tag como v1.0.5 e anexar os arquivos correspondentes:
-   Android: SnakeOdyssey-v1.0.5-android.apk
-   Windows: SnakeOdyssey-v1.0.5-windows.exe OU .zip
-3. Escrever as novidades e clicar em Publish release.
-4. O site exibirá automaticamente a versão mais recente e as anteriores, sem alterar o HTML.
+PUBLICAR UMA VERSÃO DO JOGO
+1. No repositório, abra Releases > Draft a new release.
+2. Crie uma tag (ex.: v1.0.0) e anexe SnakeOdyssey-v1.0.0.apk e/ou SnakeOdyssey-v1.0.0-Windows.zip.
+3. Publique a release. Ao recarregar o site, a versão aparecerá na plataforma correspondente.
 
-ATENÇÃO:
-- Ainda NÃO há APK ou executável neste pacote.
-- O GitHub Releases precisa estar público para a consulta sem login.
-- O site consulta até 100 releases mais recentes. Para jogos com muitos lançamentos, adicione paginação no futuro.
-- Para PC, .zip, .exe, .msi ou .msix são aceitos. Arquivos ZIP Android devem conter 'android' ou 'mobile' no nome para não aparecerem na lista de PC.
-- Se você publicar uma release com dois arquivos PC, ambos aparecerão no histórico.
-- Atualizar o APK no site NÃO atualiza automaticamente apps já instalados no Android.
-- Para manter um endereço estável no Netlify, atualize sempre o MESMO projeto/site.
-- Releases marcadas como pre-release ficam ocultas por padrão; altere includePrereleases no config.js para exibi-las.
-
-Documentação:
-https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
-https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/
+IMPORTANTE: este site apenas distribui os arquivos. Não atualiza automaticamente apps já instalados.
